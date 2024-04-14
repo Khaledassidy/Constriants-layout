@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+<!--    constarint bel nesbe la view tenye ta7ta faw2a yamena shmela mn 5elel l id
+etc...
+inside the qotes put the id
+
+        app:layout_constraintTop_toTopOf=""
+        app:layout_constraintBottom_toBottomOf=""
+        app:layout_constraintStart_toStartOf=""
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintTop_toBottomOf=""
+        app:layout_constraintBottom_toTopOf=""
+        app:layout_constraintStart_toEndOf=""
+        app:layout_constraintEnd_toStartOf=""
+
+  app:layout_constraint<Source_anchor>_to<targetanchor>of="targetid"
+
+  <source_anchor>:top,bottom,start,end
+  <target_anchor>:top,bottm,start,end
+
+-->
+
+<!--    iza enta wasel text1 3al text2
+so keef ma 7arkt text2 btet7rk ma3a text1
+ya3ne text1 related to text2 keef btet7rk text2 btet7rk ma3a text1
+ya3ne 3atoul source ma btet3ada l target
+-->
+
+<!--
+textview 2 ta7t teext view 1 mn 5elel app:layout_constraintTop_toBottomOf="@id/text1"
+top ta3el l text2 maximum byosal lal bottom ta3el text1
+keef ma 7arkt text view 1 btet7ark ma3a text view 2 w bedala text view ta7ta lal text1
+vbas fene 7arek text view 2 yamen w shameel 3ade bas heye w ta7t l text view 1
+
+-->
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:text="text1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="40dp"
+        android:text="text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
+
+
+
+<!--    houn top of text4 maximum are to the top of text 3
+text4  fene 7areka yamen shmel bas bnafs l wa2t top ta3ela mamno3 yet3ada top ta3el text3
+ keef ma 7arkt text3 byet7arak ma3 text4 w bealo top ta3el text 4 ma byet3ada top ta3el text3
+ mn5elel:app:layout_constraintTop_toTopOf="@+id/text3"
+-->
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="292dp"
+        android:text="text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="248dp"
+        android:text="text4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text3">
+
+    </TextView>
+
+<!--    houn l text 5 l button ta3elo akatr she fe yosal lal button ta3el text4
+ma fe l button ta3el text 5 yet3ada l button ta3el text4 ya3ne iza jarbt tnazel ba3d text5 nzoul la ba3d text 4 ma 7a te2dar
+feek tet7rk bel text 5 fo2 tal3o tlo3 yamen sheml 3ade
+w keeef ma 7rkt text4 la ydal text 5 yet7arak ma3a w l button ta3ela ma yet3ada l text 4
+     mnn5elel   app:layout_constraintBottom_toBottomOf="@+id/text4"
+
+
+-->
+
+    <!--    text 6 l button ta3ela aktr she feha tosal 3al top ta3el text5
+ya3ne feek t7areka la fo2 3ade la text6 bas ma ffeeeek tet5ta l top ta3el text5
+ keeef ma 7arkt l button l 5 btet7rk ma3a l button 6 w bedal bnafs l wa2t l button ta3ela la text6 ma btet5atab top text5
+      mn 5elel  app:layout_constraintBottom_toTopOf="@+id/text5"
+
+-->
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="336dp"
+        android:layout_marginBottom="8dp"
+        android:text="text5"
+        app:layout_constraintBottom_toBottomOf="@+id/text4"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="8dp"
+        android:text="text6"
+        app:layout_constraintBottom_toTopOf="@+id/text5"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+
+
+<!--
+
+text8 l start ta3ela ma feha tet3ada l start ta3el l text7
+w keef bet7arek text7 btet7arak ma3a text8
+mn 5elel:
+
+  app:layout_constraintStart_toStartOf="@+id/text7"
+
+
+
+-->
+
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="228dp"
+        android:text="text7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="268dp"
+        android:text="text8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text7">
+
+    </TextView>
+
+
+<!--    text9 ma feha tet5ta l end ta3el text8
+tex9 feha tet7rak shamel 3ade bas 3al yamen ma feha l end ta3el text9 tet5ata l end ta3t text8
+keef ma btet7rk text8 btet7rk ma3a text9 bas bedal bnafs l wa2t text9 ma feha tet3ada l end ta3et text8
+app:layout_constraintEnd_toEndOf="@+id/text8"
+
+-->
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="184dp"
+        android:text="text9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text8" />
+
+
+<!--    l end ta3el text10 ma btet3ada l start ta3el text9
+ya3ne feeek t7arek text10 3al shmeel 3ade bas ma fek enta w 3am t7arek l text10 3al yamen l end ta3el text10 ma feha tet3ada l start ta3el l text9
+ app:layout_constraintEnd_toStartOf="@+id/text9"
+
+-->
+
+    <TextView
+        android:id="@+id/text10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="76dp"
+        android:text="text10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text9">
+
+    </TextView>
+
+<!--
+
+l start ta3el text11 ma feha tet3ada l end ta3el text9
+ya3ne feha text 11 tet7arak 3al shameel 3ade
+bas heye w 3am tet7rk 3all yamen l start ta3el text11ma feha tet3ada l end ta3el text9
+keef ma btet7rk text9 btet7arak ma3a text11 bnafs l wa2t bedala text11 l start ta3ela ma feha tet3ada l end ta3el text9
+
+app:layout_constraintStart_toEndOf="@+id/text9"
+
+
+
+-->
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="64dp"
+        android:text="text11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text9">
+
+    </TextView>
+
+<!--
+iza badak ta3mel l view dala 3ala sawet view tenye 5aleha 3ala nafs l 5at mtl text8 w text12
+
+bta3mel top ta3el text12 3ala top ta3el text8
+w l button ta3el text12 3al button ta3el text8
+so bhya tare2a batal feek t7atrek l text12 mn fo2 w mn ta7t so saret 3ala saweta
+text12 feek t7areka 3al yamen w 3al sheml bas 7a dal 3ala nafs l mostawa ta3el text8
+keef ma 7arkt text8 btet7arak ma3a text12 w bedalo 3ala nafs l 5at
+-->
+    <TextView
+        android:id="@+id/text12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:text="text12"
+        app:layout_constraintBottom_toBottomOf="@+id/text8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text8"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+
+<!--    tare2a tenye la ta3mel 2 view 3ala nafs l 5at be este3mle l bias line bt7ot eno fe anchor ta7t text btwasela 3ala l anchor ta3el text tene
+tawsel l baseline bte3tabr badel l vertical
+w ba3den bta3mel l horizantal end,start
+hala2 l text13 waslt l base line 3ala l base line ta3el text9 so text13 ma fek tal3o lala fo2 wala ta7t
+
+so bedal 3ala nafs l 5at ta3el text9
+text13 feek t7arko yamen w shamel 7a ydal 3a nafs l 5at ta3el text9
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/text9"
+
+-->
+
+    <TextView
+        android:id="@+id/text13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:text="text13"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text9"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+<!--
+iza bade 5ale view teje ta7t view temne mobasahr
+mtl text14 w tex13
+text14 3mlt l start ta3ela 3ala l start ta3el text13
+text14 3mlt end ta3ela 3ala l end ta3el text13
+so bhay tare2a l text14 maximum l start w l end byosalo la l start w l end ta3el text13
+ya3ne saret text14 ta7t mobashartan l text13 ma fene 7areka la yamen wala shmel l2no 7atet l start 3ala l start w l end 3ala end
+w ba3den 7atet top ta3el text14 3ala l bottm ta3el text13 ya3ne 2ad ma 3lyt l text14 l top ta3ela ma feha tet3ada l tbuttom ta3el tetx13
+w keef ma 7arakt l text13 7a yet7arak text14 w 7a ydal ta7t l text13 mobasharatan
+
+-->
+    <TextView
+        android:id="@+id/text14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="txt14"
+        app:layout_constraintEnd_toEndOf="@+id/text13"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/text13"
+        app:layout_constraintTop_toBottomOf="@+id/text13">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

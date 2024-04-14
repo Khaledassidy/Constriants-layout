@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+
+    <!--    hyade l image 2ana 3mltela center horizantal bel mous:
+right click > center > horizantally: bta3mel center lal veiw bel nesbe la be2e l views le 3ala yamena w shamela le 7eda ya3ne mesh bel nesbe lal parent  bas iza ma ken fe 7eda views 3a yamena w shamela bta3eml lal parent bta3mel center ma7al ma7tyta app:layout_constraintStart_toStartOf="parent", app:layout_constraintEnd_toEndOf="parent"
+                        verticalyy:bta3mel center lal veiw bel nesbe la be2e l views le 3ala faw2a w ta7ta  ya3ne mesh bel nesbe lal parent  bas iza ma ken fe 7eda views faw2a w ta7ta lal parent bta3mel center ma7al ma7tyta  app:layout_constraintTop_toBottomOf="@+id/imageView3",app:layout_constraintBottom_toBottomOf="parent"
+                        horizantally in parent:bta3mel center lal veiw bel nesbe lal parent  app:layout_constraintStart_toStartOf="parent", app:layout_constraintEnd_toEndOf="parent" bekoun ma7ala bel center l e7temlyet teje bel center ta3el toul sheshe ya3ne heek:
+                                                                                                                                                                                                                                                                          ________________
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |   ma7al ma maktob l view betkoun
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                                 view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          |      view     |
+                                                                                                                                                                                                                                                                          ________________
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                          sheshet telephone
+                       verticalyy in parent:bta3mel center lal veiw bel nesbe lal parent   app:layout_constraintTop_toTopOf="parent", app:layout_constraintBottom_toBottomOf="parent" bekoun ma7ala bel center l e7temlyet teje bel center ta3el 3ard sheshe ya3ne heek:  ________________
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |view,view,view|   ma7al ma maktob l view betkoun
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          |              |
+                                                                                                                                                                                                                                                                          ________________
+
+
+-->
+<!--center horizantally in parent-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    center horizantally-->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+<!--    center vericaly in parent-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+<!--    center vericalyy-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.626" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

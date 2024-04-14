@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity9">
+
+
+    <!--    3ana kabse esma extend horizantally btwase3 l view 3al width ta3el l parent kel ma kabsta btzeed l stretch kel ma kabsta btzeeeddd-->
+
+
+    <Button
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--3ana kabse tenye esma extend verticalyy btwase3 l view 3ala l height ta3el l parent kel ma kabta btzeed l stretch kel ma kabtsa btzeeeed  -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="825dp"
+        android:text="hello2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    feeek ta3mel extend horizatally  w extend vericalyy ma3 ba3d-->
+    <Button
+        android:layout_width="321dp"
+        android:layout_height="825dp"
+        android:text="hello3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </Button>
+
+
+<!--    bas hawde ma besta3melounoun kteeerrrr-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

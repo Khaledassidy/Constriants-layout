@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+
+    <!--    chains: badel ma n3oz l bios w badna n5ale l 2 view nafs l,masefe baynetoun w abloun
+mn3ouz she esmo chain be7lole yeh
+chain:what does chains does?
+chains:constaints the views equivelently within same space horizantly or vertically
+
+
+-->
+
+    <!--    exmaple:
+
+    as we see we make horizantal chain for these 2 textview
+    the space between these 2 textview are equal
+    and the space for the text1 to the start of parent equal to the space of text2 from end
+
+-->
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="text1"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/text2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="text2"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text1"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <!--    chain have different style:1-spread: the diffult equal space betwen them and equal space at the start of text1 and end of text2
+                                   2-spread inside:both view push at the end of constrainment 7araket wasa3 wasa33 ya3ne 2 textview wa7de 3al yamen wa7de 3al shmel bas 3mlta chain spread inside le 3al shmel brou7 3ala aksa l shmel wle 3ala l yamen btrou7 2aksa l yamen
+                                   3-packed:make both veiw sooo close to each other and the space from start of text1=to space at the end of text2
+-->
+
+
+    <!--    text 3 w text4 are spread inside chain-->
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:text="text3"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text4"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:text="text4"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/text3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+<!-- text5 txt6 are packed chain 2 view close each other and the space before text5=the space after text6-->
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:text="text5"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:text="text6"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text5">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--constarint layout make the app responsive nafs she 3ala kel 2eyeset shshet l kbeer w l medium w l s8eer-->
+<!--constraint layout howe aham layout howe deffult ta3el l android
+ b5lesne mn nested layout ya3ne ykoun lunear b2alb linear b2alb relative
+constraint layout howe mtl relative bas ta3amoul ma3o ashal w maren
+-->
+
+<!-- constaint kel view ela 4 no2at:
+                top
+
+     start                end
+
+
+              buttom
+
+
+    feket haw l 2atraf bade 2orbouton ya bel parent ya bel views le 7awalyha
+
+    ya3ne ana 3ande jehten:
+    vertical:top and button
+    horizantal:start and end
+
+    kel view lezm at least torbotoun mara horiznatl w mara vertical 3al 2a2al
+    example torbout l view:
+        top and start
+        top and end
+        start and top
+        end top
+        start button
+        end button
+        etc.......
+-->
+
+<!--    law 7atet button ana w ma rabato bshe 7a yetla3 b 2awl shshe mtl relative layout
+bas le m5le ba7alo abl ma 2orbot l 3onsour she esmo tools:
+absoulutex,absolute y
+hawde le tnene bas sha8el l app bye5tofo
+aye aye she esmo tools bas sha8el l app bye5tofo
+-->
+<!--    exmaple: rabat l button top w start w end-->
+    <!--    bade button 2 yeje ta7t l button1 bhay tare2a rabt top button2 bel botton ta3el l button1 ya3ne maximum fe top ta3el l button 2 yeje 3al botton ta3el l button1-->\
+<!--    hala2 keef ma 7arkt l button1 bedala l button 2 ra7ta-->
+<!--    w keef ma 7arkt l button 2 bedala ta77t l button 1 ma feha teje faw2o-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="button1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button2"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <!--    bel constarint kel view bel attribute 3anda rasme
+     >>:hay ma3neta wrap content fee mena lal width w lal height
+  |-/-|:hay metl l match parent bas 3ana l parent constarint layout so esma match constarint fe mena lal width w l height bel code ya3ne width:0dp iza match constarint lal width ya3ne match parent w iza lal height height:0dp so height match constariant so l height match parent
+  |-|:hay ma3neta fixed l width fixed w l height fixed ya3ne adesh 7ajma bel dp l width adesh bel dp w l heght adesh bel dp heye ma3neta fixed size exmple l button1 heye: android:layout_width="98dp"  android:layout_height="48dp"
+  fe eshara 3al ration feek t7eto exmple:  1:1 ya3ne kel ma keber l width kaber ado l height aw 1:1.5 kel ma keber l width kabro mara w nous
+
+
+
+   -->
+
+<!--iza rabt l width mn l start w l end 7ayetla3 3andak 5at me2awe fek tet7akab feha bel nesbe lal parent eno adesh ykoun bo3da mn l start w l end 50 bel meye mn l start 50 bel meye mn l end aaw 60%mn l start 40% mn l end
+w iza rabt l view mn top w l button kament 7a yetla3lak sehm eno adesh tkoun b3ede mn top w mn l button msln 60% b3ede 3an top w 40% b3ede mn l button
+
+
+-->
+
+<!--    w kamen beybyen 3andak 3al rasme le bel attribute l jeha le marbta be7tolak 7eda (+) esharet zeyed-->
+
+
+<!--    fe kamen iza l button 1 3mlt match constrant bel toul l height ma 7syeer she l2no ana mane rabto mn ta7t 3ashen 3ashen  ye5od kel l mase7a le ta7to
+law rabet l button 1 b2aye she mn ta7t kenet zebtet b te5od kel l mase7a la7ed ma rabta ya3ne mte5od kel l height ta3el l parent
+-->
+
+
+<!--
+feek terbot kamen l base line ya3ne text lal button1 t5ale bnafs l mwestawa ta3el l text lal button2
+ya btorbot l base line 2aw bel nesbe lal toul w l 3ard l tnen ma3 ba3d ma btezbat
+
+-->
+
+
+<!--    fee fo2 eshret ma8nates iza fa3lta iza 7atet button a2 aye view ba3da byobot la7alo l constariant bel view w bel parent-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <!--    hou ana bel quick delivary ana 3mlt constrnt top
+w bade yeha ta7t shway fa 3mlt margin top:  android:layout_marginTop="60dp"
+tele3 60dp bas badak tentebh eno 60dp bel portriat bte5telef 3an land scape w fe 3andak shshet as8ar fa 60dp  7a tetla3 3al shshet l as8ar
+8eer 7a tetl3 l text view ta7t akatr fa hay 3ande meshkle keef bade
+ana kel ma tjanabt exte3mel l fixed value ya3ne dp keen afdal  byetla3 more responsive nafs she 3ala kel l screen size
+7ola ana shoft eno textview hayde mnesbe fa masln heye b3ede 3an top ta3el sheshs 10 bel meye fa ana
+ba3mel guidline horizantal 3al 10 belmeye
+
+note eno 60dp mn toul 8eer 60dp mn l 3ard
+ya3ne houn bel portriat 60dp heye 60dp mn toul sheshe bas iza
+albto 3al land scape 60dp heye 60dp mn 3ard shshe fa 7a ye5telef kteer
+
+hala2 ana 3mlt horizantal gudiline byeb3ed 3an top 7%  b7et ta7to l text view bhay tare2a 7alyt l meshkle ma sta3mlt fixed value ba3dmel constarint 3ala l gudiline
+houn l text view 7a yseer b3eed 7 bel meye 3al top ta3el sheshe
+keef ma 8ayrt shshe 3mlt land scape 7a ykoun text view b3eed 10 bel meye 3an top sheshe
+
+
+
+-->
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Quick delivary"
+        android:textColor="#3F51B5"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+        </TextView>
+
+    <!--    hala2 kamen 3mlt textview ta7t l quick delivary bas kamen ma 7bayt shakla
+   bade yeha te5od 80% mn 3ard sheshe fa 3mlt vertical gudiline ye5od 80%mn 3ard shshe w ba3mel constaraint 3leee w 3ashen tezbat ba3mel l width 0dp match constranit-->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="know you can order the food any time right from your mobile"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07070707" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/imag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

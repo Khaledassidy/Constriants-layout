@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <!--    in constarint layout i hava a guidlines
+guidlines:invisible layout lines use to aline and position views are usefule for responsive design make consisty among different screen sizes and oriantation
+i can add a constarint to the gudilines
+help me to put a view in specific position exmple make a guidline 50% and put image match constarint so the image in every screeen size will take 50% of screen size
+2 types of guidlines:
+    vertical guidlines:  _
+                         |
+                         |
+                         _
+
+    horizantal guidlines:|__|
+
+    vertical gudilines:
+      <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30656934" />    0.30 ya3ne 30% mn l shmel 70% mn yamen
+
+
+    horizantal gudilines:
+      <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30656934" />  0.30 ya3ne 30% mnfo2 70% mn ta7t
+
+
+        gudilines fena n7ota bel percent or in begin or in end
+        ya3ne yala bel percent ya l masefe bel dp mn l begin aw l masefe mn l end bel dp
+
+        in vertical : 3al shmel l begin 3al yamen l end
+        in horizantal mn fo2 l begin mn ta7t l end
+-->
+
+
+<!--    heed guidline horizantal e5ed 50 bel meye mn sheshe bel 3ard-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+<!--heed gudiline verical e5ed 50% mn sheshse bel toul-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+<!--    bhay tare2a mna3mel l image view e5de bel toul 50 bel meye w bel 3ard 50 bel meye
+w heek mna3mel constarint 3al gudilines
+-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/imag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline">
+
+    </ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

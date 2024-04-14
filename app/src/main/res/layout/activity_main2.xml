@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+<!--    parent ela  :
+
+                top
+
+    start                  end
+
+               bottom
+
+-->
+
+
+<!--    w kel view 3anda kamen :
+
+                 top
+
+    start                  end
+
+               bottom
+
+
+-->
+
+
+<!--    at least 2 constaint:
+
+(1)from top or bottom momken 2a3mel l tnen bas 3al 2alele wa7de
+(2)from start or end
+-->
+
+<!--    constriant layout:
+        app:layout_constraintTop_toTopOf="parent": mn top ta3el l view la top of parent
+        app:layout_constraintBottom_toBottomOf="parent": mn bottom ta3el l view lal bottom of parent
+        app:layout_constraintEnd_toEndOf="parent": mn l end ta3el l view lal end ta3el l parent
+        app:layout_constraintStart_toStartOf="parent": mn l start ta3el l view lal start of parent
+
+-->
+
+<!--
+        iza 3mlna hawde koloun btseer l view bel nous l parent
+
+        app:layout_constraintTop_toTopOf="parent": mn top ta3el l view la top of parent
+        app:layout_constraintBottom_toBottomOf="parent": mn bottom ta3el l view lal bottom of parent
+        app:layout_constraintEnd_toEndOf="parent": mn l end ta3el l view lal end ta3el l parent
+        app:layout_constraintStart_toStartOf="parent": mn l start ta3el l view lal start of parent
+        app:layout_constraint<Source_anchor>_to<targetanchor>of="parent"
+
+
+-->
+
+
+<!--
+      iza 3mlna hawde l tnen btseer l view mn fo2 3al yamen
+
+
+ app:layout_constraintTop_toTopOf="parent": mn top ta3el l view la top of parent
+ app:layout_constraintBottom_toBottomOf="parent": mn bottom ta3el l view lal bottom of parent
+
+
+
+-->
+
+
+<!--
+    iza 3mlna haw l tnen btseer l view mn fo2 3al shmel
+
+
+ app:layout_constraintTop_toTopOf="parent": mn top ta3el l view la top of parent
+ app:layout_constraintStart_toStartOf="parent": mn l start ta3el l view lal start of parent
+
+
+-->
+
+<!--
+  iza 3mlna haw l tnen ntseer l view mn ta7t 3al shmeel
+
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+
+
+-->
+
+
+<!--
+iza 3mlna haw l tnen btseer l view mn ta7t 3al yamen
+
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+-->
+
+
+<!--
+iza 3mlna haw l tlete btseer mn fo2 3al nous
+ app:layout_constraintTop_toTopOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintEnd_toEndOf="parent
+
+-->
+
+<!--
+iza 3mlna haw l tlete btseer mn ta7t bel nous
+
+
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintEnd_toEndOf="parent"
+
+
+-->
+<!--
+iza 3mlna haw l tlete btseer 3al shmeel bel nous  mn ne7yet l vertical
+
+ app:layout_constraintTop_toTopOf="parent"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+
+
+
+-->
+
+
+<!--
+iza 3mlna haw l tlete btseer 3al yamen bel nous mn ne7yet l vertical
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+
+
+
+-->
+<!--    constarint 3al parent esmaple: -->
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="in center"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+</TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fo2 3al shmel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mn fo2 3al yamen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in center mn fo2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center vertical 3al sheml"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center vertical 3al yamen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mn ta7t 3al shmeel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mn ta7t 3al yamen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center mn ta7t"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
